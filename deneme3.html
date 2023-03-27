@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>YouTube</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Roboto', sans-serif;
+        }
+        /*----------------------------------------- NAVBAR ------------------------------------------*/
+        #navbar {
+            background-color: black;
+            height: 45px;
+            margin: 0px;
+            padding: 0px;
+        }
+        #navbar i {
+            color: white;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        #navbar a {
+            color: white;
+            font-size: large;
+            text-decoration: none;
+        }
+        #navbar #tr {
+            font-size: 10px;
+            position: relative;
+            bottom: 10px;
+        }
+        #navbar input {
+            color: white;
+            border-color: gray;
+            margin-left: 170px;
+            width: 570px;
+            height: 37px;
+            outline: none;
+            border: solid 1px;
+            border-color: white;
+            background-color: black;
+            border-radius: 25px 25px 25px 25px;
+        }
+        #navbar #i2 {
+            position: absolute;
+            left: 890px;
+            padding-top: 16px;
+        }
+        #navbar #i3 {
+            position: relative;
+            left: 175px;
+        }
+        #navbar #i4 {
+            position: relative;
+            left: 185px;
+        }
+        #navbar #i5 {
+            position: relative;
+            left: 205px;
+        }
+
+
+
+
+
+        /*--------------------------------- MENÜ -----------------------------------------*/
+        #menü {
+            background-color: black;
+            height: 602px;
+            width: 220px;
+            overflow-y: scroll;
+        }
+        ul{
+            width: 150px;
+            height: 20px;
+            list-style-type: none;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #menü a{
+            text-decoration: none;
+            color: white;
+        }
+        #menü ul:hover {
+            background-color: rgb(52, 52, 52);
+            padding: px 30px;
+            border-radius: 10px;
+        }
+        #menü ul:active {
+            background-color:  rgb(52, 52, 52);
+            border-radius: 20px;
+        }
+        #menü li {
+            list-style-type: none;
+            padding-left: 15px;
+            color: white;
+            padding-top: 20px;
+        }
+        /*--------------------------------- ÜST MENÜ --------------------------*/
+        #section {
+            background-color: black;
+            position: absolute;
+            left: 228px;
+            bottom: 566px;
+            height: 35px;
+            width: 83%;
+            font-size: 15px;
+            overflow-x: scroll;
+            overflow-y: scroll;
+            display:inline-flex;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        #section a {
+            text-decoration: none;
+            color: white;
+            background-color:  rgb(52, 52, 52);
+            border-radius: 5px;
+            padding-left: 15px; /*soldan boşluk*/
+            padding-top: 10px; /*yazı yukaru aşağı*/
+            padding-right: 10px;/*sağdan boşuk*/
+            margin-left: 11px;
+        }
+
+
+
+
+        /*-------------------------------------------- İÇERİK ---------------------*/
+        #içerik1 {
+            background-color: black;
+            height: 300px;
+            width: 350px;
+            position: relative;
+            bottom: 520px;
+            left: 250px;
+        }#içerik2 {
+            background-color: gray;
+            height: 300px;
+            width: 350px;
+            position: relative;
+            bottom: 840px;
+            left: 620px;
+        }#içerik3 {
+            background-color: gray;
+            height: 300px;
+            width: 350px;
+            position: relative;
+            bottom: 1160px;
+            left: 990px;
+        }#içerik4 {
+            background-color: gray;
+            height: 300px;
+            width: 350px;
+            position: relative;
+            bottom: 1140px;
+            left: 250px;
+        }#içerik5 {
+            background-color: gray;
+            height: 300px;
+            width: 350px;
+            position: relative;
+            bottom: 1460px;
+            left: 620px;
+        }#içerik6 {
+            background-color: gray;
+            height: 300px;
+            width: 350px;
+            position: relative;
+            bottom: 1780px;
+            left: 990px;
+        }#içerik7 {
+            background-color: gray;
+            height: 300px;
+            width: 350px;
+            position: relative;
+            bottom: 1760px;
+            left: 250px;
+        }#içerik8 {
+            background-color: gray;
+            height: 300px;
+            width: 350px;
+            position: relative;
+            bottom: 2080px;
+            left: 620px;
+        }#içerik9 {
+            background-color: gray;
+            height: 300px;
+            width: 350px;
+            position: relative;
+            bottom: 2400px;
+            left: 990px;
+        }
+/*-------------------------------------- içeriğin içi ---------------------------------------------------------*/
+        #içerik1 h2 {
+            color: rgb(228, 228, 228);
+            position: relative;
+            top: -20px;
+            left: 40px;
+        }
+        #içerik1 h4 {
+            color: rgb(190, 190, 190);
+            position: relative;
+            top: -40px;
+            left: 40px;
+        }
+        #içerik1 #h1 {
+            color: rgb(190, 190, 190);
+            position: relative;
+            top: -60px;
+            left: 40px;
+        }
+        #içerik1 #h2 {
+            color: rgb(190, 190, 190);
+            position: relative;
+            top: -100px;
+            left: 165px;
+        }
+/*-----------------------------------*/
+        #içerik2 h2 {
+            position: relative;
+            top: 220px;
+            left: 40px;
+        }
+        #içerik2 h4 {
+            position: relative;
+            top: 205px;
+            left: 40px;
+        }
+        #içerik2 #h1 {
+            position: relative;
+            top: 187px;
+            left: 40px;
+        }
+        #içerik2 #h2 {
+            position: relative;
+            top: 148px;
+            left: 165px;
+        }
+/*--------------------------------------*/
+        #içerik3 h2 {
+            position: relative;
+            top: 220px;
+            left: 40px;
+        }
+        #içerik3 h4 {
+            position: relative;
+            top: 205px;
+            left: 40px;
+        }
+        #içerik3 #h1 {
+            position: relative;
+            top: 187px;
+            left: 40px;
+        }
+        #içerik3 #h2 {
+            position: relative;
+            top: 148px;
+            left: 165px;
+        }
+/*-----------------------------------------*/
+        #içerik4 h2 {
+            position: relative;
+            top: 220px;
+            left: 40px;
+        }
+        #içerik4 h4 {
+            position: relative;
+            top: 205px;
+            left: 40px;
+        }
+        #içerik4 #h1 {
+            position: relative;
+            top: 187px;
+            left: 40px;
+        }
+        #içerik4 #h2 {
+            position: relative;
+            top: 148px;
+            left: 165px;
+        }
+/*-----------------------------------------*/
+        #içerik5 h2 {
+            position: relative;
+            top: 220px;
+            left: 40px;
+        }
+        #içerik5 h4 {
+            position: relative;
+            top: 205px;
+            left: 40px;
+        }
+        #içerik5 #h1 {
+            position: relative;
+            top: 187px;
+            left: 40px;
+        }
+        #içerik5 #h2 {
+            position: relative;
+            top: 148px;
+            left: 165px;
+        }
+/*----------------------------------------*/
+        #içerik6 h2 {
+            position: relative;
+            top: 220px;
+            left: 40px;
+        }
+        #içerik6 h4 {
+            position: relative;
+            top: 205px;
+            left: 40px;
+        }
+        #içerik6 #h1 {
+            position: relative;
+            top: 187px;
+            left: 40px;
+        }
+        #içerik6 #h2 {
+            position: relative;
+            top: 148px;
+            left: 165px;
+        }
+/*-------------------------------------------*/
+        #içerik7 h2 {
+            position: relative;
+            top: 220px;
+            left: 40px;
+        }
+        #içerik7 h4 {
+            position: relative;
+            top: 205px;
+            left: 40px;
+        }
+        #içerik7 #h1 {
+            position: relative;
+            top: 187px;
+            left: 40px;
+        }
+        #içerik7 #h2 {
+            position: relative;
+            top: 148px;
+            left: 165px;
+        }
+/*------------------------------------------------*/
+        #içerik8 h2 {
+            position: relative;
+            top: 220px;
+            left: 40px;
+        }
+        #içerik8 h4 {
+            position: relative;
+            top: 205px;
+            left: 40px;
+        }
+        #içerik8 #h1 {
+            position: relative;
+            top: 187px;
+            left: 40px;
+        }
+        #içerik8 #h2 {
+            position: relative;
+            top: 148px;
+            left: 165px;
+        }
+/*-------------------------------------------*/
+        #içerik9 h2 {
+            position: relative;
+            top: 220px;
+            left: 40px;
+        }
+        #içerik9 h4 {
+            position: relative;
+            top: 205px;
+            left: 40px;
+        }
+        #içerik9 #h1 {
+            position: relative;
+            top: 187px;
+            left: 40px;
+        }
+        #içerik9 #h2 {
+            position: relative;
+            top: 148px;
+            left: 165px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href=""><i id="i1" class="fa-solid fa-bars fa-lg"></i></a>
+        <a href=""><i class="fa-brands fa-youtube fa-xl" style="color: #ff0000;"></i></a>
+        <a href="">YouTube</a>
+        <a id="tr" href="">TR</a>
+        <input type="text" placeholder="   Ara">
+        <label>
+            <i id="i2" class="fas fa-search"></i>
+        </label>
+        <a href=""><i class="fa-solid fa-microphone fa-lg"></i></a>
+        <a href=""><i id="i3" class="fa-solid fa-video fa-lg"></i></a>
+        <a href=""><i id="i4" class="fa-solid fa-bell fa-lg"></i></a>
+        <a href=""><i id="i5" class="fa-brands fa-google fa-lg"></i></a>
+    </div>
+
+
+
+
+    
+
+
+    <div id="menü">
+        <ul><a href=""><i class="fa-solid fa-house"></i> Anasayfa</a></ul>
+        <ul><a href=""><i class="fa-solid fa-bolt"></i> Shorts</a></ul>
+        <ul><a href=""><i class="fa-solid fa-plus"></i> Abonelikler</a></ul>
+        <ul><a href=""><i class="fa-solid fa-tv"></i> Originals</a></ul>
+        <ul><a href=""><i class="fa-solid fa-circle-play"></i> YouTube Mucis</a></ul>
+        <hr style="margin-top: 25px;">
+        <ul><a href="">Kitaplık</a></ul>
+        <ul><a href="">Geçmiş</a></ul>
+        <ul><a href="">Videolarınız</a></ul>
+        <ul><a href="">Daha sonra izle</a></ul>
+        <ul><a href="">İndilenler</a></ul>
+        <ul><a href="">Beğendiğim videolar</a></ul>
+        <hr style="margin-top: 25px;">
+        <li><a href="">Abonelikler</a></li>
+                <ul><a href="">Atik Ailesi</a></ul>
+                <ul><a href="">Babala TV</a></ul>
+                <ul><a href="">Barış Özcan</a></ul>
+                <ul><a href="">Elraenn</a></ul>
+                <ul><a href="">Rreane</a></ul>
+        <hr style="margin-top: 25px;">
+        <li><a href="">Keşfet</a></li>
+        <ul><a href="">Trendler</a></ul>
+        <ul><a href="">Müzik</a></ul>
+        <ul><a href="">Canlı</a></ul>
+        <ul><a href="">Oyun</a></ul>
+        <ul><a href="">Spor</a></ul>
+    </div>
+
+
+
+
+
+
+
+    <div id="section">
+        <a href="">Tümü</a>
+        <a href="">Oyun</a>
+        <a href="">Mix'ler</a>
+        <a href="">Müzik</a>
+        <a href="">Rap yapma</a>
+        <a href="">Futbol</a>
+        <a href="">Basketbol</a>
+        <a href="">El sanatları</a>
+        <a href="">Son yüklenenler</a>
+        <a href="">Canlı</a>
+        <a href="">İzlenenler</a>
+        <a href="">Yeni öneriler</a>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="içerik1">
+        <iframe width="350" height="225" src="https://www.youtube.com/embed/yMrOKxduy3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2>Yeni oda vloğum</h2>
+        <h4>Hakan Yılmaz</h4>
+        <h5 id="h1">9,9m görüntülenme</h5>
+        <h5 id="h2">1 yıl önce</h5>
+    </div>
+    <div id="içerik2">
+        <h2>Yeni oda vloğum</h2>
+        <h4>Hakan Yılmaz</h4>
+        <h5 id="h1">9,9m görüntülenme</h5>
+        <h5 id="h2">1 yıl önce</h5>
+    </div>
+    <div id="içerik3">
+        <h2>Yeni oda vloğum</h2>
+        <h4>Hakan Yılmaz</h4>
+        <h5 id="h1">9,9m görüntülenme</h5>
+        <h5 id="h2">1 yıl önce</h5>
+    </div>
+    <div id="içerik4">
+        <h2>Yeni oda vloğum</h2>
+        <h4>Hakan Yılmaz</h4>
+        <h5 id="h1">9,9m görüntülenme</h5>
+        <h5 id="h2">1 yıl önce</h5>
+    </div>
+    <div id="içerik5">
+        <h2>Yeni oda vloğum</h2>
+        <h4>Hakan Yılmaz</h4>
+        <h5 id="h1">9,9m görüntülenme</h5>
+        <h5 id="h2">1 yıl önce</h5>
+    </div>
+    <div id="içerik6">
+        <h2>Yeni oda vloğum</h2>
+        <h4>Hakan Yılmaz</h4>
+        <h5 id="h1">9,9m görüntülenme</h5>
+        <h5 id="h2">1 yıl önce</h5>
+    </div>
+    <div id="içerik7">
+        <h2>Yeni oda vloğum</h2>
+        <h4>Hakan Yılmaz</h4>
+        <h5 id="h1">9,9m görüntülenme</h5>
+        <h5 id="h2">1 yıl önce</h5>
+    </div>
+    <div id="içerik8">
+        <h2>Yeni oda vloğum</h2>
+        <h4>Hakan Yılmaz</h4>
+        <h5 id="h1">9,9m görüntülenme</h5>
+        <h5 id="h2">1 yıl önce</h5>
+    </div>
+    <div id="içerik9">
+        <h2>Yeni oda vloğum</h2>
+        <h4>Hakan Yılmaz</h4>
+        <h5 id="h1">9,9m görüntülenme</h5>
+        <h5 id="h2">1 yıl önce</h5>
+    </div>
+</body>
+</html>
